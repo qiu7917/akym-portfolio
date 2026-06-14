@@ -2,6 +2,7 @@
   background: url(../img/profile-bg.png);
   background-attachment: fixed;
   background-position: right;
+  background-size: cover;
 }
 
 .profile {
