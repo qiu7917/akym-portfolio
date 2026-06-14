@@ -155,6 +155,24 @@ section {
     z-index: 0;
 }
 
+@media screen and (max-width: 1024px) {
+    #cursor-dot,
+    #cursor-ring,
+    #ripple-canvas {
+        display: none !important; /* 要素そのものを非表示にする */
+
+    }
+
+    html, body {
+        cursor: auto !important;
+    }
+    
+    /* リンクやボタンにホバーした時は指マーク（ポインター）にする */
+    a, button, [role="button"] {
+        cursor: pointer !important;
+    }
+}
+
 .page-top {
     .fv-gradient {
         position: fixed;
@@ -952,14 +970,14 @@ header {
     .container {
         display: flex;
 
-        @include m.sp {
+        @media screen and (max-width: 1024px) {
             flex-direction: column;
         }
 
         .contact-left {
             width: 40%;
 
-            @include m.sp {
+            @include m.tab {
                 width: 100%;
             }
 
@@ -981,14 +999,15 @@ header {
                     padding-left: 20px;
                     font-size: 12px;
                     line-height: 20px;
-
                 }
-
             }
         }
 
         .contact-form {
             padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             @include m.sp {
                 padding: 40px 20px;
@@ -1026,7 +1045,6 @@ header {
 
                     @include m.sp {
                         margin-bottom: 10px;
-
                     }
                 }
 

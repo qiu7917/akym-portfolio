@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page-profile {
   position: relative;
   z-index: 1;
@@ -445,6 +446,20 @@ section {
   z-index: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  #cursor-dot,
+  #cursor-ring,
+  #ripple-canvas {
+    display: none !important; /* 要素そのものを非表示にする */
+  }
+  html, body {
+    cursor: auto !important;
+  }
+  /* リンクやボタンにホバーした時は指マーク（ポインター）にする */
+  a, button, [role=button] {
+    cursor: pointer !important;
+  }
+}
 .page-top .fv-gradient {
   position: fixed;
   inset: 0;
@@ -1132,7 +1147,7 @@ header .hamburger span:nth-child(3) {
 .contact .container {
   display: flex;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
   .contact .container {
     flex-direction: column;
   }
@@ -1140,7 +1155,7 @@ header .hamburger span:nth-child(3) {
 .contact .container .contact-left {
   width: 40%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .contact .container .contact-left {
     width: 100%;
   }
@@ -1166,6 +1181,9 @@ header .hamburger span:nth-child(3) {
 }
 .contact .container .contact-form {
   padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 500px) {
   .contact .container .contact-form {

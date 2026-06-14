@@ -35,10 +35,36 @@ $(window).on('load scroll', function () {
 //    cursor
 ===================================================*/
 
+// const dot = document.getElementById('cursor-dot');
+// const ring = document.getElementById('cursor-ring');
+
+// document.addEventListener('mousemove', function (e) {
+//     dot.style.left = e.clientX + 'px';
+//     dot.style.top = e.clientY + 'px';
+//     ring.style.left = e.clientX + 'px';
+//     ring.style.top = e.clientY + 'px';
+// });
+
+// document.querySelectorAll('a, button').forEach(function (el) {
+//     el.addEventListener('mouseenter', function () {
+//         ring.style.width = '44px';
+//         ring.style.height = '44px';
+//         ring.style.opacity = '0.4';
+//     });
+//     el.addEventListener('mouseleave', function () {
+//         ring.style.width = '28px';
+//         ring.style.height = '28px';
+//         ring.style.opacity = '0.6';
+//     });
+// });
+
 const dot = document.getElementById('cursor-dot');
 const ring = document.getElementById('cursor-ring');
 
 document.addEventListener('mousemove', function (e) {
+    // 💡タブレットサイズ以下の時は処理をスキップ
+    if (window.innerWidth <= 1024) return;
+
     dot.style.left = e.clientX + 'px';
     dot.style.top = e.clientY + 'px';
     ring.style.left = e.clientX + 'px';
@@ -47,18 +73,22 @@ document.addEventListener('mousemove', function (e) {
 
 document.querySelectorAll('a, button').forEach(function (el) {
     el.addEventListener('mouseenter', function () {
+        // 💡タブレットサイズ以下の時は処理をスキップ
+        if (window.innerWidth <= 1024) return;
+
         ring.style.width = '44px';
         ring.style.height = '44px';
         ring.style.opacity = '0.4';
     });
     el.addEventListener('mouseleave', function () {
+        // 💡タブレットサイズ以下の時は処理をスキップ
+        if (window.innerWidth <= 1024) return;
+
         ring.style.width = '28px';
         ring.style.height = '28px';
         ring.style.opacity = '0.6';
     });
 });
-
-
 
 /*=================================================
 //    ripple
