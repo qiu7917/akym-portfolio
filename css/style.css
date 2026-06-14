@@ -377,7 +377,8 @@ section {
   }
 }
 .section-title .section-title-img {
-  height: 120px;
+  max-height: 120px;
+  height: 100%;
   width: auto;
 }
 @media screen and (max-width: 768px) {
@@ -825,8 +826,8 @@ header .hamburger span:nth-child(3) {
 }
 .works .container::before, .works .container::after {
   content: "";
-  height: 1000px;
-  width: 1000px;
+  height: 110%;
+  width: 110%;
   background: url(../img/circle.png);
   background-size: contain;
   position: absolute;
@@ -836,16 +837,10 @@ header .hamburger span:nth-child(3) {
   z-index: -1;
   pointer-events: none;
 }
-@media screen and (max-width: 768px) {
-  .works .container::before, .works .container::after {
-    height: 700px;
-    width: 700px;
-  }
-}
 @media screen and (max-width: 500px) {
   .works .container::before, .works .container::after {
-    height: 200px;
-    width: 200px;
+    height: 150%;
+    width: 150%;
   }
 }
 .works .container::before {
@@ -1084,11 +1079,13 @@ header .hamburger span:nth-child(3) {
   align-items: center;
 }
 .skill .container .skill-list .skill-item .skill-img {
-  height: 220px;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 500px) {
   .skill .container .skill-list .skill-item .skill-img {
-    height: 180px;
+    max-width: 180px;
   }
 }
 .skill .container .skill-list .skill-item .skill-head {
@@ -1134,7 +1131,6 @@ header .hamburger span:nth-child(3) {
 }
 .contact .container {
   display: flex;
-  gap: 10%;
 }
 @media screen and (max-width: 500px) {
   .contact .container {
