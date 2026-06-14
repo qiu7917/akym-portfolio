@@ -448,7 +448,7 @@ section {
 .page-top .fv-gradient {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: -2;
   overflow: hidden;
 }
 .page-top .fv-blob {
