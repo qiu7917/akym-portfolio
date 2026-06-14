@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ai akiyama portfolio</title>
+    <!-- riset css -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+
+<body class="page-top">
+    <div class="fv-gradient" aria-hidden="true">
+        <div class="fv-blob fv-blob--1"></div>
+        <div class="fv-blob fv-blob--2"></div>
+        <div class="fv-blob fv-blob--3"></div>
+        <div class="fv-blob fv-blob--4"></div>
+        <div class="fv-blob fv-blob--5"></div>
+    </div>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <canvas id="ripple-canvas"></canvas>
+
+    <header>
+        <h1 class="sr-only">ai akiyama portfolio site</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">top</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#works">works</a></li>
+                <li><a href="#skill">skill</a></li>
+                <li class="nav-contact"><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+
+    <main>
+        <!-- ===== fv =============================== -->
+        <section class="fv">
+
+            <div class="fv-area">
+                <img src="img/fv-logo.png" alt="" class="fv-logo">
+                <img src="img/fv-logo-sp.png" alt="" class="fv-logo-sp">
+            </div>
+            <div class="scroll">
+                <span>scroll</span>
+            </div>
+        </section>
+
+
+        <!-- ===== message =============================== -->
+        <section class="message">
+            <div class="container">
+                <div class="message-en fadein">
+                    Shaping Your Thoughts<br>
+                    into a Digital Masterpiece.
+                </div>
+                <div class="message-jp fadein">
+                    <p class="message-jp-head">想いをかたちに。<br>
+                        伝わるデザインと丁寧な実装を。
+                    </p>
+                    <p class="message-jp-text">デザインと実装を切り離さず、一つのゴールへ。<br>
+                        お客様のビジネスの成長を、<br>
+                        Web制作の全ステップから力強くサポートします。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== works =============================== -->
+        <section class="works" id="works">
+            <div class="container">
+                <h2 class="section-title">
+                    <img src="img/works.png" alt="works" class="section-title-img">
+                    <p class="section-title-jp">制作物</p>
+                </h2>
+
+                <ul class="works-list">
+                    <li class="works-item fadein">
+                        <a href="works1.html">
+                            <img src="img/works1.png" alt="" class="works-img">
+                            <p class="works-title">ピラティススタジオ（架空）</p>
+                            <p class="works-text">LP | 自主制作</p>
+                        </a>
+                    </li>
+                    <li class="works-item fadein">
+                        <a href="works2.html">
+                            <img src="img/works2.png" alt="" class="works-img">
+                            <p class="works-title">次世代D2Cプラットフォーム紹介LP（架空）</p>
+                            <p class="works-text">LP | 自主制作</p>
+                        </a>
+                    </li>
+                    <li class="works-item fadein">
+                        <a href="works3.html">
+                            <img src="img/works3.png" alt="" class="works-img">
+                            <p class="works-title">ポートフォリオ</p>
+                            <p class="works-text">Website |自主制作</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ===== about =============================== -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">
+                    <img src="img/about.png" alt="about" class="section-title-img">
+                    <p class="section-title-jp">私について</p>
+                </h2>
+
+                <div class="about-content">
+                    <img src="img/about-img.png" alt="" class="about-img">
+                    <div class="abouut-textarea fadein">
+                        <p class="about-name-jp">秋山 愛</p>
+                        <p class="about-name-en">akiyama ai</p>
+                        <p class="about-text">
+                            ポートフォリオを御覧いただきありがとうございます。<br>
+                            10年以上のオフィスワーク経験を経て、Webの世界へ飛び込みました。<br>
+                            事務職時代に大切にしていた<br>
+                            「相手のニーズを先読みし、正確にアウトプットする」<br>
+                            という姿勢は、現在のサイト制作にも深く根付いています。<br>
+                            <br>
+                            お客様の想いに寄り添い、共に価値を創り上げるプロセスを大切にしています。
+                        </p>
+                        <div class="about-more">
+                            <a href="profile.html">more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== skill =============================== -->
+        <section class="skill" id="skill">
+            <div class="container">
+                <h2 class="section-title">
+                    <img src="img/skill.png" alt="skill" class="section-title-img">
+                    <p class="section-title-jp">できること</p>
+                </h2>
+
+
+                <ul class="skill-list">
+                    <li class="skill-item fadein">
+                        <img src="img/skill-1.png" alt="" class="skill-img">
+                        <p class="skill-head">コーディング</p>
+                        <p class="skill-text">
+                            HTML/CSS、JavaScriptを用いたWebコーディングに対応。
+                            FigmaやPhotoshop、Illustratorなどのデザインカンプから、
+                            細かなディテールや空気感までシームレスに再現します。
+                            滑らかな動的演出の実装もお任せください。
+                        </p>
+                        <ul class="skill-lang">
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>jQuery</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                    <li class="skill-item fadein">
+                        <img src="img/skill-2.png" alt="" class="skill-img">
+                        <p class="skill-head">レスポンシブ</p>
+                        <p class="skill-text">
+                            モバイルファーストの現代に欠かせない、各種デバイス（スマホ・タブレット・PC）への表示最適化を行います。
+                            端末を選ばず「見やすく、操作しやすい」デザインを保つことで、ユーザーの閲覧ストレスを解消。
+                            動線や視認性に配慮した丁寧なレスポンシブを実装いたします。
+                        </p>
+                    </li>
+                    <li class="skill-item fadein">
+                        <img src="img/skill-3.png" alt="" class="skill-img">
+                        <p class="skill-head">Wordpress</p>
+                        <p class="skill-text">
+                            WordPressを用いた動的なサイト構築に対応。デザインの自由度が高いオリジナルテーマの制作から、
+                            既存の静的サイトを活かしたWordPress移行まで幅広く承ります。
+                            お知らせや主要コンテンツのパーツ化など、日々の更新作業がストレスなく行える設計を徹底します。
+                        </p>
+                    </li>
+                    <li class="skill-item fadein">
+                        <img src="img/skill-4.png" alt="" class="skill-img">
+                        <p class="skill-head">webデザイン</p>
+                        <p class="skill-text">
+                            Figmaを使用し、サイトの目的やブランドの空気感に合わせた最適なビジュアルをご提案します。
+                            全体のトーン＆マナーの設計から、レイアウト、細かなパーツのデザインまで丁寧に作り込みます。
+                            デザインからコーディングまで一貫したクオリティを保ち、魅力を最大限に引き出すWebサイトの土台を構築します。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== contact =============================== -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-left">
+                    <h2 class="section-title section-title-contact">
+                        <img src="img/contact.png" alt="contact" class="section-title-img">
+                        <p class="section-title-jp">お問い合わせ</p>
+                    </h2>
+                    <p class="contact-text">
+                        お仕事のご相談・ご依頼はこちらから<br>
+                        お気軽にお問い合わせください。</p>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <label for="name">お名前:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">ふりがな:</label>
+                        <input type="text" id="name-kana" name="name-kana" required>
+                        <label for="email">メールアドレス:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">お問い合わせ内容:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">送 信</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- ===== footer =============================== -->
+
+    <footer>
+        <p class="copyright">&copy;2026 ai akiyama</p>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
