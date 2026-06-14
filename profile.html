@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフィール | ai akiyama portfolio</title>
+    <!-- riset css -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+
+<body class="page-profile">
+    <div class="fv-gradient" aria-hidden="true">
+        <div class="fv-blob fv-blob--1"></div>
+        <div class="fv-blob fv-blob--2"></div>
+        <div class="fv-blob fv-blob--3"></div>
+        <div class="fv-blob fv-blob--4"></div>
+        <div class="fv-blob fv-blob--5"></div>
+    </div>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <canvas id="ripple-canvas"></canvas>
+
+    <header>
+        <h1 class="sr-only">ai akiyama portfolio site</h1>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">top</a></li>
+                <li><a href="index.html#about">about</a></li>
+                <li><a href="index.html#works">works</a></li>
+                <li><a href="index.html#skill">skill</a></li>
+                <li class="nav-contact"><a href="index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== profile =============================== -->
+        <section class="profile" id="profile">
+            <div class="container">
+                <h2 class="section-title">
+                    <img src="img/profile.png" alt="profile" class="section-title-img">
+                    <p class="section-title-jp">プロフィール</p>
+                </h2>
+
+                <div class="profile-wrapper">
+                    <img src="img/profile-img.png" alt="" class="profile-img">
+                    <div class="profile-textarea fadein">
+                        <p class="profile-name-jp">秋山 愛</p>
+                        <p class="profile-name-en">akiyama ai</p>
+                        <p class="profile-text">
+                            1986年生まれ。愛知県出身。東京都在住。<br>
+                            大学卒業後、港湾運送業、食品メーカー、自然エネルギー関連商社にて、<br>
+                            貿易業務、調達購買業務に従事。<br>
+                            <br>
+                            SNSでWeb制作という働き方を知ったことをきっかけに、学習を始めました。<br>
+                            制作を重ねる中で、コードを一つひとつ積み上げながらサイトを構築していく工程にやりがいを感じるようになり、完成したサイトが公開された際には大きな達成感を得ています。<br>
+                            現在はコーディング案件を中心に活動をしておりデザインの再現性はもちろん、保守性や拡張性も意識した実装を心がけています。<br>
+                            コーディングだけでなくwebデザインについても研鑽を積み、上流から下流まで一気通貫でサポートできる体制を整えています。<br>
+                            <br>
+                            「作って終わり」ではなく、その先の運用まで見据えた丁寧な手仕事を。<br>
+                            今後も継続的にスキルを磨きながら、クライアント様の目的達成に貢献できる制作を行っていきたいと考えています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ===== strength =============================== -->
+        <section class="strength" id="strength">
+            <div class="container">
+                <h2 class="section-title">
+                    <img src="img/strength.png" alt="strength" class="section-title-img">
+                    <p class="section-title-jp">私の強み</p>
+                </h2>
+
+                <ul class="strength-list">
+                    <li class="strength-item fadein">
+                        <img src="img/strength-1.png" alt="" class="strength-img">
+                        <div class="strength-textarea">
+                            <div class="strength-head">
+                                <img src="img/strength-no1.png" alt="" class="img-strength-no">
+                                <p class="strength-head-text">誠実な対話と伴走</p>
+                            </div>
+                            <p class="strength-text">
+                                技術的な提供だけでなく、プロセスの透明性と誠実なコミュニケーションを最も大切にしています。制作過程では、潜在的な要望を汲み取りや随時進捗を共有することを心がけています。<br>
+                                この姿勢により、これまでのプロジェクトでも「次もあなたにお任せしたい」と高い評価をいただいてきました。<br>
+                                お客様のビジョンを深く理解し、同じ目標に向かって歩む「伴走者」として、確かな信頼を築き上げます。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="strength-item fadein">
+                        <img src="img/strength-2.png" alt="" class="strength-img">
+                        <div class="strength-textarea">
+                            <div class="strength-head">
+                                <img src="img/strength-no2.png" alt="" class="img-strength-no">
+                                <p class="strength-head-text">緻密さと俯瞰する目</p>
+                            </div>
+                            <p class="strength-text">
+                                10年以上の社会人経験で培った「正確性」と、クリエイターとしての「創造性」を使い分けを意識しています。<br>
+                                コーディングにおいては、1px単位のデザイン再現やデバイスごとの細かな挙動に徹底してこだわる一方、プロジェクト全体を俯瞰し、運用のしやすさなど最適解を導き出します。<br>
+                                この視点を自在に切り替えることで、美しさと機能性を兼ね備えた、破綻のないサイト制作を実現します。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="strength-item fadein">
+                        <img src="img/strength-3.png" alt="" class="strength-img">
+                        <div class="strength-textarea">
+                            <div class="strength-head">
+                                <img src="img/strength-no3.png" alt="" class="img-strength-no">
+                                <p class="strength-head-text">探究心と適応力</p>
+                            </div>
+                            <p class="strength-text">
+                                新しい技術やツールを迅速に実務へ取り入れることを得意としています。<br>
+                                サイト制作において、高品質な素材が不足している課題に対し、AI（Stable Diffusion等）を活用して独自にイラストやビジュアルを生成し組み込んでいきます。<br>
+                                目まぐるしく変わるWeb業界のトレンドを柔軟に取り入れ、付加価値のある提案を追求し続けます。
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ===== like =============================== -->
+        <section class="like" id="like">
+            <div class="container">
+                <h2 class="section-title">
+                    <img src="img/strength.png" alt="strength" class="section-title-img">
+                    <p class="section-title-jp">私の好きなもの</p>
+                </h2>
+
+                <ul class="like-list">
+                    <li class="like-item fadein">
+                        <img src="img/like-1.png" alt="" class="like-img">
+                        <div class="like-hover">
+                            <p class="like-hover-text"><span>台湾</span><br>
+                                年に数回台湾へ行っています。おいしいものがたくさんで毎回お腹いっぱいになるまで食べることが楽しみです。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="like-item fadein">
+                        <img src="img/like-2.png" alt="" class="like-img">
+                        <div class="like-hover">
+                            <p class="like-hover-text"><span>コーヒー</span><br>
+                                豆を挽いてコーヒーを入れる時間が大好きで、仕事の合間のリラックスタイムです。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="like-item fadein">
+                        <img src="img/like-3.png" alt="" class="like-img">
+                        <div class="like-hover">
+                            <p class="like-hover-text"><span>美術館・展示会</span><br>
+                                いろいろな美術館や展示会へ行くのが好きです。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="like-item fadein">
+                        <img src="img/like-4.png" alt="" class="like-img">
+                        <div class="like-hover">
+                            <p class="like-hover-text"><span>猫</span><br>
+                                一緒に暮らしていませんが、実家にいる猫に癒されてます。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="like-item fadein">
+                        <img src="img/like-5.png" alt="" class="like-img">
+                        <div class="like-hover">
+                            <p class="like-hover-text"><span>音楽・ライブ</span><br>
+                                学生時代は吹奏楽をやっており、いろいろな音楽を聴くのが好きです。
+                                好きなバンドのライブに行くのが楽しみです！
+                            </p>
+                        </div>
+                    </li>
+                    <li class="like-item fadein">
+                        <img src="img/like-6.png" alt="" class="like-img">
+                        <div class="like-hover">
+                            <p class="like-hover-text"><span>パン屋めぐり</span><br>
+                                週末はおいしそうなパン屋さんを開拓することにはまってます。
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- ===== footer =============================== -->
+
+    <footer>
+        <p class="copyright">&copy;2026 ai akiyama</p>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@use 'mixin' as m;
+
+.works_page {
+    .works_img-sec {
+        text-align: center;
+        margin-bottom: 150px;
+        padding: 150px 12% 80px 12%;
+        background: #f0dde5;
+        background: #bfd5f2;
+        background: radial-gradient(circle, rgba(191, 213, 242, 0.3) 0%, rgba(245, 201, 219, 0.3) 100%);
+
+
+
+        @include m.tab {
+            padding: 150px 5% 80px 5%;
+        }
+
+        @include m.sp {
+            padding: 70px 5% 80px 5%;
+            margin-bottom: 100px;
+
+
+        }
+
+        .section-title {
+            margin-bottom: 120px;
+
+            @include m.sp {
+                margin-bottom: 100px;
+            }
+
+        }
+
+
+
+        .works_img {
+            width: 100%;
+        }
+    }
+
+    .works_text-sec {
+        .works_head {
+            margin-bottom: 100px;
+
+            @include m.sp {
+            margin-bottom: 60px;
+            }
+
+            .works_head-title {
+                font-size: 24px;
+                font-family: var(--font-jp-serif);
+                margin-bottom: 10px;
+                font-weight: 600;
+                
+                span {
+                    font-size: 14px;
+                    margin-left: 20px;
+                }
+            }
+
+            .works_head-scopee {
+                font-size: 14px;
+                font-family: var(--font-jp-serif);
+            }
+        }
+
+
+        .works_list {
+            padding-bottom: 100px;
+
+            dl {
+                display: flex;
+                flex-wrap: wrap;
+
+                @include m.sp {
+                    flex-direction: column;
+                }
+
+
+                dt {
+                    width: 200px;
+                    margin-bottom: 70px;
+                    line-height: 1.2;
+                    letter-spacing: 0.02em;
+                    font-family: var(--font-jp);
+                    font-weight: 500;
+
+                    @include m.sp {
+                        width: 100%;
+                        margin-bottom: 10px;
+                        font-size: 12px;
+                    }
+                }
+
+                dd {
+                    width: calc(100% - 200px);
+                    margin-bottom: 70px;
+                    line-height: 1.8;
+                    letter-spacing: 0.01em;
+                    font-family: var(--font-jp);
+
+                    @include m.sp {
+                        width: 90%;
+                        margin-bottom: 40px;
+                        margin-left: 5%;
+                        font-size: 12px;
+
+                    }
+                }
+            }
+        }
+    }
+}
